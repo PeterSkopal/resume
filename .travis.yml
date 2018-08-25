@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+  - node
+dist: trusty
+sudo: false
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install -g yarn
+  - yarn
+
+script:
+  - yarn lint
+  - yarn build --base-href https://PeterSkopal.github.io/resume/
+  - yarn test
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/resume
+  on:
+    branch: master
