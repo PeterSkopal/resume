@@ -1,0 +1,17 @@
+<div class="title-container" [@appear]="appear.asObservable().value">
+    <span typingAnimation
+        [typeSpeed]="40"
+        [startDelay]="400"
+        [hideCursorOnComplete]="true"
+        (complete)="typeSubHeading = true"
+        class="greeting"
+    >Hello, I am Peter
+    </span>
+    <span typingAnimation
+        [typeSpeed]="20"
+        [hideCursorOnComplete]="true"
+        [condition]="typeSubHeading"
+        class="sub-heading"
+    >want to meet your next employee?
+    </span>
+</div>
