@@ -1,11 +1,11 @@
-<div class="title-container" [@appear]="appear.asObservable().value">
+<div smoothContainer class="title-container">
     <span typingAnimation
         [typeSpeed]="40"
-        [startDelay]="400"
+        [startDelay]="0"
         [hideCursorOnComplete]="true"
         (complete)="typeSubHeading = true"
         class="greeting"
-    >Hello, I am Peter
+    >Hello, I'm Peter
     </span>
     <span typingAnimation
         [typeSpeed]="20"

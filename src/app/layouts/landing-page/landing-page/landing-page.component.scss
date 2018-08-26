@@ -12,11 +12,7 @@
   background-color: $Overlay;
   padding: 0 30px;
   width: 100%;
-  height: 140px;
-
-  @media screen and (max-width: $break-small) {
-    height: 240px;
-  }
+  overflow: hidden;
 
   .greeting {
     display: block;

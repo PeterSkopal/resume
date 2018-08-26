@@ -8,18 +8,21 @@ import { FooterFixedComponent } from './layouts/footer-fixed/footer-fixed/footer
 import { FooterFixedNavItemComponent } from './layouts/footer-fixed/footer-fixed-nav-item/footer-fixed-nav-item.component';
 import { LandingPageComponent } from './layouts/landing-page/landing-page/landing-page.component';
 
+import { SmoothContainerDirective } from './directives/smooth-container.directive';
+
 const COMPONENTS = [
   AppComponent,
   FooterFixedComponent,
   FooterFixedNavItemComponent,
   LandingPageComponent,
-  TypingAnimationDirective,
 ];
+
+const DIRECTIVES = [TypingAnimationDirective, SmoothContainerDirective];
 
 const IMPORTS = [BrowserModule, BrowserAnimationsModule];
 
 @NgModule({
-  declarations: [...COMPONENTS],
+  declarations: [...COMPONENTS, ...DIRECTIVES],
   imports: [...IMPORTS],
   providers: [],
   bootstrap: [AppComponent],
