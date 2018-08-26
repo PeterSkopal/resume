@@ -8,7 +8,7 @@ import { FooterFixedComponent } from './layouts/footer-fixed/footer-fixed/footer
 import { FooterFixedNavItemComponent } from './layouts/footer-fixed/footer-fixed-nav-item/footer-fixed-nav-item.component';
 import { LandingPageComponent } from './layouts/landing-page/landing-page/landing-page.component';
 
-import { SmoothContainerDirective } from './directives/smooth-container.directive';
+import { SmoothContainerDirective } from './directives/smooth-container/smooth-container.directive';
 
 const COMPONENTS = [
   AppComponent,
