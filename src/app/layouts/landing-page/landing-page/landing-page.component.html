@@ -1,17 +1,19 @@
 <div smoothContainer class="title-container">
-    <span typingAnimation
-        [typeSpeed]="40"
-        [startDelay]="0"
-        [hideCursorOnComplete]="true"
-        (complete)="typeSubHeading = true"
-        class="greeting"
-    >Hello, I'm Peter
-    </span>
-    <span typingAnimation
-        [typeSpeed]="20"
-        [hideCursorOnComplete]="true"
-        [condition]="typeSubHeading"
-        class="sub-heading"
-    >want to meet your next employee?
-    </span>
+    <div class="greeting">
+        <span typingAnimation
+            [typeSpeed]="40"
+            [startDelay]="0"
+            [hideCursorOnComplete]="true"
+            (complete)="typeSubHeading = true"
+        >Hello, I'm Peter
+        </span>
+    </div>
+    <div class="sub-heading">
+        <span typingAnimation
+            [typeSpeed]="20"
+            [hideCursorOnComplete]="true"
+            [condition]="typeSubHeading"
+        >want to meet your next employee?
+        </span>
+    </div>
 </div>
