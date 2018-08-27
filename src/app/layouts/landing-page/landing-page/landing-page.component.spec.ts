@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { TypingAnimationDirective } from 'angular-typing-animation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TypingAnimationDirective } from 'angular-typing-animation';
 
 import { LandingPageComponent } from './landing-page.component';
 describe('LandingPageComponent', () => {

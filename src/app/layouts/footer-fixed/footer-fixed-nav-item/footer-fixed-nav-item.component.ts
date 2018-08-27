@@ -1,11 +1,11 @@
-import { Component, HostListener } from '@angular/core';
 import {
-  trigger,
+  animate,
   state,
   style,
-  animate,
   transition,
+  trigger,
 } from '@angular/animations';
+import { Component, HostListener } from '@angular/core';
 
 const styleNormal = {
   color: 'transparent',

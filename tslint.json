@@ -60,11 +60,17 @@
       "check-else",
       "check-whitespace"
     ],
+    "ordered-imports": [
+      true,
+      {
+        "module-source-path": "full"
+      }
+    ],
     "prefer-const": true,
     "quotemark": [true, "single"],
     "radix": true,
     "semicolon": [true, "always"],
-    "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+    "trailing-comma": [true, { "multiline": "always", "singleline": "never" }],
     "triple-equals": [true, "allow-null-check"],
     "typedef-whitespace": [
       true,

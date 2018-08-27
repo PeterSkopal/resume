@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { async, TestBed, ComponentFixture } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SmoothContainerDirective } from './smooth-container.directive';
 
