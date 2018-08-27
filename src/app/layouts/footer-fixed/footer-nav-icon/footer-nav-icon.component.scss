@@ -1,0 +1,32 @@
+@import '../../../../styles/variables.scss';
+
+:host{
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 3px;
+  background-color: $Overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  div {
+    height: 4px;
+    width: 19px;
+    border-radius: 1px;
+    background-color: $Off-Black;
+    margin-top: 4px;
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
+

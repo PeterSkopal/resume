@@ -5,6 +5,7 @@ import { TypingAnimationDirective } from 'angular-typing-animation';
 
 import { AppComponent } from './app.component';
 import { FooterFixedComponent } from './layouts/footer-fixed/footer-fixed/footer-fixed.component';
+import { FooterNavIconComponent } from './layouts/footer-fixed/footer-nav-icon/footer-nav-icon.component';
 import { FooterFixedNavItemComponent } from './layouts/footer-fixed/footer-fixed-nav-item/footer-fixed-nav-item.component';
 import { LandingPageComponent } from './layouts/landing-page/landing-page/landing-page.component';
 
@@ -13,6 +14,7 @@ import { SmoothContainerDirective } from './directives/smooth-container/smooth-c
 const COMPONENTS = [
   AppComponent,
   FooterFixedComponent,
+  FooterNavIconComponent,
   FooterFixedNavItemComponent,
   LandingPageComponent,
 ];
